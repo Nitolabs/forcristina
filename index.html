@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Feliz cumpleaños, Cristina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="locked">
+<div class="gate" id="gate">
+  <svg viewBox="0 0 120 110" aria-hidden="true">
+    <polygon points="18,48 20,8 52,28" fill="#f8c8d6" stroke="#c2527a" stroke-width="3" stroke-linejoin="round"/>
+    <polygon points="102,48 100,8 68,28" fill="#f8c8d6" stroke="#c2527a" stroke-width="3" stroke-linejoin="round"/>
+    <ellipse cx="60" cy="64" rx="46" ry="40" fill="#f8c8d6" stroke="#c2527a" stroke-width="3"/>
+    <ellipse class="eye" cx="42" cy="60" rx="5" ry="7" fill="#3a2630"/>
+    <ellipse class="eye" cx="78" cy="60" rx="5" ry="7" fill="#3a2630"/>
+    <polygon points="55,72 65,72 60,79" fill="#c2527a"/>
+    <path d="M60 79 q-6 8 -13 3 M60 79 q6 8 13 3" fill="none" stroke="#3a2630" stroke-width="2.5" stroke-linecap="round"/>
+  </svg>
+  <h1>Hola, Cristina</h1>
+  <p>Alguien preparó algo especial para tu cumpleaños.</p>
+  <button class="enter" id="enter">Toca para abrir tu sorpresa</button>
+  <p id="vol" hidden>Te recomiendo subir un poco el volumen.</p>
+</div>
+<main id="page" inert>
+  <header class="hero">
+    <h1>Cristina cumple <span class="n">20</span></h1>
+    <p>Hoy el diagnóstico es claro: toca celebrar.</p>
+    <svg class="ecg" viewBox="0 0 800 120" role="img" aria-label="Electrocardiograma que termina en dos orejitas de gato">
+      <path pathLength="1" d="M0 70 H200 l14 -14 l14 14 H300 l14 -50 l20 100 l16 -80 l10 30 H520 l22 -52 l22 52 l22 -52 l22 52 H800"/>
+    </svg>
+  </header>
+
+  <section>
+    <h2>Historia clínica</h2>
+    <dl class="chart">
+      <div><dt>Paciente</dt><dd>Cristina</dd></div>
+      <div><dt>Edad</dt><dd>20 años, recién estrenados</dd></div>
+      <div><dt>Formación</dt><dd>Estudiante de Medicina</dd></div>
+      <div><dt>Hallazgo principal</dt><dd>Debilidad severa ante cualquier gatito</dd></div>
+      <div><dt>Pronóstico</dt><dd>Un año lleno de cosas buenas</dd></div>
+      <div><dt>Indicación</dt><dd>Pastel, risas y abrazos sin límite de dosis</dd></div>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Paciente en observación</h2>
+    <div class="cat-wrap">
+      <button class="cat-btn" id="cat" aria-label="Acariciar al gatito" aria-pressed="false">
+        <svg class="cat" viewBox="0 0 120 110" aria-hidden="true">
+          <polygon points="18,48 20,8 52,28" fill="#f8c8d6" stroke="#c2527a" stroke-width="3" stroke-linejoin="round"/>
+          <polygon points="102,48 100,8 68,28" fill="#f8c8d6" stroke="#c2527a" stroke-width="3" stroke-linejoin="round"/>
+          <polygon points="25,38 26,18 42,28" fill="#c2527a" opacity=".45"/>
+          <polygon points="95,38 94,18 78,28" fill="#c2527a" opacity=".45"/>
+          <ellipse cx="60" cy="64" rx="46" ry="40" fill="#f8c8d6" stroke="#c2527a" stroke-width="3"/>
+          <ellipse class="eye" cx="42" cy="60" rx="5" ry="7" fill="#3a2630"/>
+          <ellipse class="eye" cx="78" cy="60" rx="5" ry="7" fill="#3a2630"/>
+          <ellipse cx="30" cy="76" rx="7" ry="4.5" fill="#c2527a" opacity=".35"/>
+          <ellipse cx="90" cy="76" rx="7" ry="4.5" fill="#c2527a" opacity=".35"/>
+          <polygon points="55,72 65,72 60,79" fill="#c2527a"/>
+          <path d="M60 79 q-6 8 -13 3 M60 79 q6 8 13 3" fill="none" stroke="#3a2630" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M8 66 l18 3 M8 78 l18 -2 M112 66 l-18 3 M112 78 l-18 -2" stroke="#3a2630" stroke-width="2" stroke-linecap="round" opacity=".6"/>
+        </svg>
+        <span class="purr" id="purr">prrr…</span>
+      </button>
+      <p>Este gatito lleva todo el día esperando para desearte un feliz cumpleaños. Acarícialo para comprobar sus signos vitales.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Receta de cumpleaños</h2>
+    <div class="rx-box">
+      <p class="rx-text" id="wish" aria-live="polite">Que cada examen se sienta más ligero que un gatito dormido.</p>
+      <button class="rx" id="next">Recetar otro deseo</button>
+      <span class="dose" id="dose">Dosis 1 de 6</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Una carta para ti</h2>
+    <button class="env" id="env" aria-expanded="false" aria-label="Abrir el sobre">
+      <span class="env-back"></span>
+      <span class="env-paper"></span>
+      <span class="env-front"></span>
+      <span class="env-flap"></span>
+      <span class="env-seal" aria-hidden="true">♥</span>
+    </button>
+    <p class="hint">Toca el sobre para abrirlo</p>
+    <div class="reveal" id="letter"><div>
+      <article class="paper">
+        <p>Cristina,</p>
+        <p>Feliz cumpleaños. Hoy cumples 20 años y quería tomarme un momento para escribirte algo que quizás no te digo tan seguido como debería.</p>
+        <p>Me alegra muchísimo tenerte en mi vida. Eres una de las personas que más quiero y, sinceramente, no sé si alguna vez te he hecho saber lo mucho que significa para mí tu amistad. Siempre has sido una persona increíblemente buena y amable conmigo, y creo que una de las cosas que más aprecio de ti es precisamente eso, la manera tan genuina en la que tratas a las personas que quieres.</p>
+        <p>Me encanta pasar tiempo contigo, hablar contigo, incluso cuando no tenemos nada particularmente interesante que decir. Creo que esa es una de las cosas más bonitas de nuestra amistad, que tu compañía es disfrutable por sí misma, que puedo hablar contigo de cualquier cosa y simplemente sentirme bien estando ahí. No hace falta que ocurra algo extraordinario para que compartir un momento contigo sea algo que valga la pena.</p>
+        <p>Tienes un corazón enorme, Cristina. Siempre me has demostrado ser una persona compasiva, cariñosa y capaz de tratar a los demás con una ternura que realmente admiro. Me parece muy bonito que, incluso en las cosas más pequeñas, puedas transmitir tanto cariño. Y aunque quizás no siempre seas consciente de ello, esa forma de ser tuya hace que seas alguien muy especial para quienes tenemos la suerte de conocerte.</p>
+        <p>Quiero que sepas que estoy muy agradecido por tu amistad, por tu cariño y por cada momento que hemos compartido. Eres mi mejor amiga y una de las personas más importantes de mi vida, y espero poder seguir compartiendo contigo muchísimos momentos más.</p>
+        <p>Deseo que tus 20 años estén llenos de cosas bonitas, de personas que te quieran tanto como mereces, de momentos que te hagan feliz y de razones para seguir siendo esa persona tan maravillosa que eres. Espero que la vida también sea amable contigo, que te devuelva todo el cariño que has dado y que nunca te falten motivos para sonreír.</p>
+        <p>Te quiero muchísimo, Cristina. Feliz cumpleaños.</p>
+        <p>Con mucho cariño,<br>Dominic Castillo</p>
+      </article>
+    </div></div>
+  </section>
+
+  <section>
+    <h2>Una estrella fugaz</h2>
+    <div class="sky">
+      <button class="fstar" id="star" aria-label="Tocar la estrella fugaz">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5l3 6.9 7.5.7-5.7 5 1.7 7.4L12 17.5l-6.5 4 1.7-7.4-5.7-5 7.5-.7z"/></svg>
+        <span class="trail"></span>
+      </button>
+      <p class="sky-hint">Toca la estrella y pide un deseo</p>
+    </div>
+    <div class="reveal" id="poem"><div>
+      <article class="paper poem">
+        <p>Cristina,</p>
+        <p>En un mundo tan ruidoso y apresurado,<br>tú eres un respiro, una calma necesaria.<br>Tu corazón, tan grande y compasivo,<br>alivia, escucha y abraza sin medida.</p>
+        <p>Tu belleza no solo está en tu rostro,<br>sino en la forma tan pura en que sonríes,<br>en la luz de tus ojos, en tu risa sincera,<br>en esa esencia que hace todo más bonito.</p>
+        <p>Eres genuina, y eso te hace especial;<br>dices lo que piensas, sientes de verdad,<br>y siempre buscas el bien, con una nobleza<br>que inspira y que se siente de verdad.</p>
+        <p>Me encanta hablar contigo, de cualquier cosa,<br>reír, compartir ideas, y hasta el silencio,<br>porque tu compañía es un regalo<br>que valoro más de lo que imaginas.</p>
+        <p>Gracias por tu cariño, por tu amabilidad,<br>por tu presencia que alegra mis días,<br>y por demostrarme, una y otra vez,<br>que tienes un corazón increíble.</p>
+        <p>Hoy celebro tus 20 años, y quiero que sepas<br>que te aprecio muchísimo, que te quiero de verdad,<br>y que deseo que la vida te regale siempre<br>felicidad, amor y todo lo bueno que mereces.</p>
+        <p>Feliz cumpleaños, Cristina.</p>
+        <p>Con todo mi cariño,<br>Dominic</p>
+      </article>
+    </div></div>
+  </section>
+
+  <footer>
+    Feliz cumpleaños, Cristina.
+    <span>Que los veinte te traten con mucho cariño.</span>
+  </footer>
+</main>
+<audio id="music" loop preload="auto" src="audio/musica.mp3"></audio>
+<button class="music" id="mbtn" hidden>♪ Pausar música</button>
+<script src="js/main.js"></script>
+</body>
+</html>
